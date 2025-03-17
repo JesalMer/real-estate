@@ -1,0 +1,118 @@
+.recent .text {
+  padding: 10px;
+  border-radius: 5px;
+  background: none; /* No background behind name */
+}
+
+.recent h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.recent .category {
+  position: relative;
+  margin-top: 5px; /* Moved below the image */
+}
+
+.recent .category span {
+  padding: 4px 10px;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 13px;
+  display: inline-block;
+}
+
+.recent p {
+  color: #72809d;
+}
+
+.recent .bedrooms {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.recent .bedrooms i {
+  margin-right: 5px;
+  color: #25b579;
+}
+
+.recent .button {
+  padding: 5px 10px; /* Reduced padding */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.recent .button span {
+  font-size: 18px; /* Adjust font size */
+  font-weight: bold;
+  color: #333;
+  text-align: right;
+  flex-grow: 1; /* Push price to the right */
+}
+
+
+.recent .button div {
+  display: flex;
+  align-items: center;
+}
+
+.recent .button .btn2 {
+  background: none;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #373e3b;
+}
+
+.recent .button .btn-more-info {
+  background: #25b579;
+  color: white;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px; /* Move button next to price */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.box {
+  width: 100%;
+  position: relative;
+}
+
+.img {
+  position: relative;
+  width: 100%;
+}
+
+.img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.recent .bedrooms {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+.recent .bedrooms i {
+  margin-right: 5px;
+  color: #25b579;
+}
+

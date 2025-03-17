@@ -1,0 +1,107 @@
+/* General layout and typography */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Property list container */
+.property-list {
+    width: 90%;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* Grid layout for property cards */
+.grid {
+    display: flex;
+    flex-direction: column; /* Stack properties vertically */
+    gap: 20px;
+}
+
+/* Property Card */
+.property-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 15px;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.property-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Styling */
+.property-card img {
+    width: 200px; /* Fixed width for uniformity */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+/* Property Details */
+.property-details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.property-details h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #333;
+}
+
+.property-details p {
+    font-size: 0.95rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Price Styling */
+.property-price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #2e8b57;
+    background-color: #fffae6;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Icons Styling */
+.property-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.property-icons span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .property-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .property-card img {
+        width: 100%;
+        height: 180px;
+        margin-bottom: 10px;
+    }
+}

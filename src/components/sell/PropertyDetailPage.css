@@ -1,0 +1,252 @@
+.property-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.property-card {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+}
+
+/* LEFT SECTION */
+.left-section {
+  flex: 1;
+}
+
+/* Main Image */
+.main-image-container {
+  text-align: center;
+}
+
+.main-image {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Thumbnails */
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.thumbnail {
+  width: 100px;
+  height: 80px;
+  border-radius: 5px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.thumbnail:hover {
+  transform: scale(1.1);
+}
+
+.cardhove:hover {
+  transform: scale(1.1);
+}
+
+/* Property Info */
+.property-info {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.property-info h1 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.description {
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
+}
+
+.location {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Owner Info */
+.owner-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  justify-content: center;
+}
+
+.owner-icon {
+  font-size: 20px;
+}
+
+/* RIGHT SECTION */
+.right-section {
+  flex: 1;
+  padding: 10px;
+  background: #faf5ee;
+  border-radius: 10px;
+}
+
+.info-card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.info-card p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Description Card */
+.description-card {
+  background: #fff7e6;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+}
+
+.description-card h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.description-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Buttons Group */
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Token Payment Button */
+.token-payment-btn {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  margin: 20px auto 0;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(45deg, #ff9900, #ff6600);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.token-payment-btn:hover {
+  background: linear-gradient(45deg, #ff6600, #ff3300);
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.token-payment-btn:active {
+  transform: scale(0.98);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact Owner Button */
+.contact-owner-btn {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  margin: 20px auto 0;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: #28a745;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-owner-btn:hover {
+  background: #218838;
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contact-owner-btn:active {
+  transform: scale(0.98);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .property-card {
+      flex-direction: column;
+  }
+
+  .thumbnails {
+      justify-content: center;
+  }
+
+  .thumbnail {
+      width: 80px;
+      height: 60px;
+  }
+  .more-info {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.more-info-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.more-info-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+}
